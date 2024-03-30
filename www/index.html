@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>FFmpeg video re-packer</title>
+		<link href = "index.css" rel = "stylesheet">
+		<script src = "index.js"></script>
+	</head>
+	<body>	
+		<div id = "content">
+			<div id = "breadcrumbs"><div path = "/">Home</div></div>
+			<div id = "filelist"></div>
+			<div id = "dialog">
+				<div>
+					<div id = "filename"></div>
+					<div id = "details"></div>
+					<div id = "streams"></div>
+					<div id = "options">			
+						<span>
+							<label for = "container">Format</label>
+							<select id = "container">
+								<option value = "avi">avi</option>
+								<option value = "mkv" selected>mkv</option>
+								<option value = "mp4">mp4</option>
+							</select>
+						</span>
+
+						<span>	
+							<label for = "audio_codec">Audio</label>
+							<select id = "audio_codec">
+								<option value = "copy" selected>copy</option>
+								<option value = "aac">AAC</option>
+								<option value = "ac3">ac3</option>
+								<option value = "libopus">Opus</option>
+								<option value = "mp3">mp3</option>
+							</select>
+						</span>
+					</div>
+
+					<textarea id = "command" rows = "5"></textarea>
+
+					<div id = "buttons">
+						<div id = "button-cancel">Back to list</div>
+						<div id = "button-ok">Repack</div>
+					</div>					
+				</div>
+			</div>
+
+			<div id = "log">
+				<div>
+					<pre id = "output"></pre>
+	
+					<div id = "buttons">
+						<div id = "button-list">Back to list</div>
+						<div id = "button-file">Back to file</div>
+					</div>					
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>

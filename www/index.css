@@ -1,0 +1,19 @@
+*[hidden] {display: none !important}
+#content {position: fixed; top: 0%; bottom: 0%; left: 30%; right: 30%;}
+#content #breadcrumbs {margin: 5px 0;}
+#content #breadcrumbs > div {display: inline-block; padding: 5px 10px; margin-right: 10px; cursor: pointer; background: #eee;}
+#content #filelist {height: 100%;  border: 1px dotted #eee; overflow-y: auto;}
+#content #filelist > div {padding: 10px; border-top: 1px dotted #bbb; display: flex; justify-content: space-between;}
+#content #filelist #remove {padding: 5px;}
+#content #filelist #remove:hover {color: red;}
+#content #filelist > div:hover {background: #eee; cursor: pointer;}
+#content #dialog {height: 100%; display: flex; align-items: center; justify-content: center;}
+#content #dialog #filename {width: 380px; margin: 5px 0; padding: 5px 10px;  border-bottom: 1px solid #000;}
+#content #dialog #details {margin-bottom: 20px; padding: 0 10px; color: #bbb; display: flex; justify-content: space-between;}
+#content #dialog #options {width: 380px; margin: 10px 0; padding: 10px; background: #eee; display: flex; justify-content: space-between;}
+#content #dialog #options select {margin-left: 15px; width: 60px;}
+#content #dialog #command {width: 400px;}
+#content #buttons {width: 100%; display: flex; justify-content: space-between;}
+#content #buttons > div {display: inline-block; padding: 5px 20px; background: #bbb; cursor: pointer; margin: 10px;}
+#content #log {height: 100%; display: flex; align-items: center; justify-content: center;}
+#content #log #output {width: 100%; padding: 10px; border: 1px dotted #bbb; overflow: auto; height: 400px; width: 800px;}
